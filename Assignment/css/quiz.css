@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    background-image: url(../assets/picture/universe-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.quiz {
+    text-align: left;
+    padding: 70px;
+    padding-top: 100px;
+}
+
+fieldset {}

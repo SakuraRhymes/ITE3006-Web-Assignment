@@ -1,0 +1,28 @@
+.topbar {
+    filter: opacity(80%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topbar a {
+    font-family: sans-serif;
+    text-decoration: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 20px;
+}
+
+.topbar a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+.topbar a.active {
+    background-color: #ff9933;
+    color: white;
+}

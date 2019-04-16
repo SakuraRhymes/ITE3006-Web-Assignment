@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.btn_Planet {
+.btn {
     position: absolute;
     outline: 0;
     background-color: transparent;
@@ -33,17 +33,19 @@ body {
     width: 30px;
 }
 
-.btn_Planet:hover ~ #iframe_planet {
+.btn:hover ~ #iframe_planet {
+    visibility: visible;
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0s;
 }
 
 #iframe_planet {
+    visibility: hidden;
     width: 30%;
     height: 60%;
     position: absolute;
     top: 25%;
     left: 50%;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0s;
 }

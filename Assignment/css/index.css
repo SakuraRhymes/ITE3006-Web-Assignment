@@ -4,4 +4,25 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
 }
+
+.startBtnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.startBtn {
+    text-decoration: none;
+    position: absolute;
+    color: white;
+    top: 90%;
+    border: none;
+    background-color: #d58029;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    mix-blend-mode: screen;
+}
+

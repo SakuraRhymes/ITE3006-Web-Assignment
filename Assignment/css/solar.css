@@ -96,6 +96,7 @@ html, body {
     position: absolute;
     top: 20%;
     left: 45%;
+    border: 3px orange solid;
     opacity: 0;
     transition: opacity 0.5s;
 }

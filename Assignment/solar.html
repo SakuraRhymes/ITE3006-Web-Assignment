@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Solar System</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/solar.css" type="text/css">
     <link rel="stylesheet" href="css/topbar.css" type="text/css">
     <script src="javascript/solar.js"></script>
-
 </head>
 
 <body>
@@ -18,17 +18,18 @@
     <a href="">Planets</a>
     <a href="quiz.html">Mini Quiz</a>
 </div>
-
-<button class="btn btn_Mercury" onmouseover="onHoverChangeiframe('mercury')"></button>
-<button class="btn btn_Venus" onmouseover="onHoverChangeiframe('venus')"></button>
-<button class="btn btn_Earth" onmouseover="onHoverChangeiframe('earth')"></button>
-<button class="btn btn_Mars" onmouseover="onHoverChangeiframe('mars')"></button>
-<button class="btn btn_Jupiter" onmouseover="onHoverChangeiframe('jupiter')"></button>
-<button class="btn btn_Saturn" onmouseover="onHoverChangeiframe('saturn')"></button>
-<button class="btn btn_Uranus" onmouseover="onHoverChangeiframe('uranus')"></button>
-<button class="btn btn_Neptune" onmouseover="onHoverChangeiframe('neptune')"></button>
-<iframe src="mercury.html" id="iframe_planet"></iframe>
-
+<div class="container">
+    <img class="bg" src="assets/picture/solar_system.png"/>
+    <button class="btn btn_Mercury" onmouseover="onHoverChangeiframe('mercury')"></button>
+    <button class="btn btn_Venus" onmouseover="onHoverChangeiframe('venus')"></button>
+    <button class="btn btn_Earth" onmouseover="onHoverChangeiframe('earth')"></button>
+    <button class="btn btn_Mars" onmouseover="onHoverChangeiframe('mars')"></button>
+    <button class="btn btn_Jupiter" onmouseover="onHoverChangeiframe('jupiter')"></button>
+    <button class="btn btn_Saturn" onmouseover="onHoverChangeiframe('saturn')"></button>
+    <button class="btn btn_Uranus" onmouseover="onHoverChangeiframe('uranus')"></button>
+    <button class="btn btn_Neptune" onmouseover="onHoverChangeiframe('neptune')"></button>
+    <iframe src="mercury.html" id="iframe_planet"></iframe>
+</div>
 </body>
 
 </html>

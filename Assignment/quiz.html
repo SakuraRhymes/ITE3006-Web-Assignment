@@ -3,45 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/topbar.css">
     <link rel="stylesheet" href="css/quiz.css">
 </head>
 
 <body>
-    <div class="topbar">
-        <a href="index.html">Home</a>
-        <a href="solar.html">Solar System</a>
-        <a href="">Planets</a>
-        <a class="active" href="quiz.html">Mini Quiz</a>
-    </div>
+<div class="topbar">
+    <a href="index.html">Home</a>
+    <a href="solar.html">Solar System</a>
+    <a href="">Planets</a>
+    <a class="active" href="quiz.html">Mini Quiz</a>
+</div>
+</div>
 
-    <div class="quiz">
-        <form action="" method="post" enctype="multipart/form-data">
-            <fieldset>
-                <legend>Part 1 : Solar System</legend>
+<h1 class="quiz_intro">
+    Mini Quiz About Our Solar System
+</h1>
+
+<div class="quiz">
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Part 1 : Solar System</legend>
+
+            <div class="question">
+                <p>Q1. What is the radius of the Sun?</p>
+                <label><input type="radio" name="Q1" required> ~160,000m</label>
+                <label><input type="radio" name="Q1"> ~580,000cm</label>
+                <label><input type="radio" name="Q1"> ~700,000km</label>
+                <label><input type="radio" name="Q1"> ~3,250ly</label>
+            </div>
+
+            <div class="question">
+                <p>Q2. What is an Astronomical Unit?</p>
+                <label><input type="radio" name="Q2" required> The size of the Earth</label>
                 <br>
-                How big is the Sun?
+                <label><input type="radio" name="Q2"> The size of the Solar System</label>
                 <br>
-                <input type="radio">10cm
-                <input type="radio">10km
-                <input type="radio">10ly
+                <label><input type="radio" name="Q2"> The distance from Earth to the Sun</label>
                 <br>
-                <br>
-                How hot is your mum?
-                <br>
-                <input type="radio">-273
-                <input type="radio">0
-                <input type="radio">100
-                <input type="radio">>9000
-                <br>
-                <br>
-                How long is your dong?
-                <br>
-                <input type="radio">1nm
-                <input type="radio">2nm
-                <input type="radio">3nm
-            </fieldset>
-        </form>
-    </div>
+                <label><input type="radio" name="Q2"> The distance that light travels in one year</label>
+            </div>
+
+            <div class="question">
+                <p>Q3. How many planets are there in our Solar System?</p>
+                <label><input type="radio" name="Q3" required> 9 planets</label>
+                <label><input type="radio" name="Q3"> 13 planets</label>
+                <label><input type="radio" name="Q3"> 8 planets</label>
+                <label><input type="radio" name="Q3"> Over 9000</label>
+            </div>
+
+            <div class="question">
+                <p>Q4. How long it takes our solar system to orbit around the galactic center?</p>
+                <label><input type="radio" name="Q4" required> 3,750 years</label>
+                <label><input type="radio" name="Q4"> 230 million years</label>
+                <label><input type="radio" name="Q4"> 74 billion years</label>
+                <label><input type="radio" name="Q4"> 365 days</label>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Part 2 : Earth</legend>
+
+            <div class="question">
+
+            </div>
+
+        </fieldset>
+    </form>
+</div>
 </body>
 </html>

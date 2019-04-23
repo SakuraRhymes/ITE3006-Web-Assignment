@@ -92,14 +92,16 @@ html, body {
 }
 
 #iframe_planet {
-    width: 30%;
-    height: 60%;
+    width: 25%;
+    height: 55%;
     position: absolute;
     top: 20%;
     left: 45%;
     border: 3px orange solid;
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.5s;
+    overflow: hidden;
 }
 
 .hint {

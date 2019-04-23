@@ -28,6 +28,7 @@
 }
 
 .startBtn:hover {
+    background-color: #d57400;
     box-shadow: 0 0px 35px orange;
     color: white;
 }

@@ -14,6 +14,10 @@ body {
 
 }
 
+.saturn img {
+    width: 95% !important;
+}
+
 .planet_name {
     line-height: 2;
     font-weight: bold;

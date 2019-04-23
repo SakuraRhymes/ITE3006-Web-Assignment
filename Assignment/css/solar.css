@@ -94,6 +94,7 @@ html, body {
 #iframe_planet {
     width: 25%;
     height: 55%;
+    padding-top: 15px;
     position: absolute;
     top: 20%;
     left: 45%;
@@ -102,6 +103,7 @@ html, body {
     opacity: 0;
     transition: opacity 0.5s;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .hint {

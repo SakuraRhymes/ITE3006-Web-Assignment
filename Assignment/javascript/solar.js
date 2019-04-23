@@ -5,7 +5,7 @@ function onHoverChangeiframe(planetName) {
     // topbar.item(0).style.display = "none";
     switch (planetName) {
         case "sun":
-            iframe.style.left = "30%";
+            iframe.style.left = "25%";
             break;
         case "mercury":
             iframe.style.left = "30%";

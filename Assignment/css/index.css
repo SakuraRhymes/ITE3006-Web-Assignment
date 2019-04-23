@@ -15,14 +15,18 @@
 .startBtn {
     text-decoration: none;
     position: absolute;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     top: 90%;
     border: none;
     background-color: #d58029;
     font-family: sans-serif;
     font-size: 25px;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 13px 30px;
     mix-blend-mode: screen;
 }
 
+.startBtn:hover {
+    box-shadow: 0 0px 35px orange;
+    color: white;
+}

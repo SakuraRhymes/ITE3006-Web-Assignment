@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/topbar.css">
     <link rel="stylesheet" href="css/quiz.css">
+    <script src="javascript/quiz.js"></script>
 </head>
 
 <body>
@@ -23,42 +24,54 @@
 
 <div class="quiz">
     <form action="" method="post" enctype="multipart/form-data">
+        <fieldset class="result">
+            <legend>Mini Quiz Result</legend>
+
+            <input type="button" class="retry_button" value="Try Again" onclick="window.location.reload()">
+            <div>
+                Your total score was <span class="score">?</span> out of 4 !
+            </div>
+
+        </fieldset>
+
+        <br>
+
         <fieldset>
             <legend>Part 1 : Solar System</legend>
 
             <div class="question">
                 <p>Q1. What is the radius of the Sun?</p>
-                <input type="radio" name="Q1" id="Q1a" required><label for="Q1a"> ~160,000m</label>
-                <input type="radio" name="Q1" id="Q1b"><label for="Q1b"> ~580,000cm</label>
-                <input type="radio" name="Q1" id="Q1c"><label for="Q1c"> ~700,000km</label>
-                <input type="radio" name="Q1" id="Q1d"><label for="Q1d"> ~3,250ly</label>
+                <input type="radio" name="Q1" id="Q1a" value="a" required><label for="Q1a"> ~160,000m</label>
+                <input type="radio" name="Q1" id="Q1b" value="b"><label for="Q1b"> ~700,000km</label>
+                <input type="radio" name="Q1" id="Q1c" value="c"><label for="Q1c"> ~580,000cm</label>
+                <input type="radio" name="Q1" id="Q1d" value="d"><label for="Q1d"> ~3,250ly</label>
             </div>
 
             <div class="question">
                 <p>Q2. What is an Astronomical Unit?</p>
-                <input type="radio" name="Q2" required id="Q2a"><label for="Q2a"> The size of the Earth</label>
+                <input type="radio" name="Q2" id="Q2a" value="a" required><label for="Q2a"> The size of the Earth</label>
                 <br>
-                <input type="radio" name="Q2" id="Q2b"><label for="Q2b"> The size of the Solar System</label>
+                <input type="radio" name="Q2" id="Q2b" value="b"><label for="Q2b"> The size of the Solar System</label>
                 <br>
-                <input type="radio" name="Q2" id="Q2c"><label for="Q2c"> The distance from Earth to the Sun</label>
+                <input type="radio" name="Q2" id="Q2c" value="c"><label for="Q2c"> The distance from Earth to the Sun</label>
                 <br>
-                <input type="radio" name="Q2" id="Q2d"><label for="Q2d"> The distance that light travels in one year</label>
+                <input type="radio" name="Q2" id="Q2d" value="d"><label for="Q2d"> The distance that light travels in one year</label>
             </div>
 
             <div class="question">
                 <p>Q3. How many planets are there in our Solar System?</p>
-                <input type="radio" name="Q3" id="Q3a" required><label for="Q3a"> 9 planets</label>
-                <input type="radio" name="Q3" id="Q3b"><label for="Q3b"> 13 planets</label>
-                <input type="radio" name="Q3" id="Q3c"><label for="Q3c"> 8 planets</label>
-                <input type="radio" name="Q3" id="Q3d"><label for="Q3d"> Over 9000</label>
+                <input type="radio" name="Q3" id="Q3a" value="a" required><label for="Q3a"> 9 planets</label>
+                <input type="radio" name="Q3" id="Q3b" value="b"><label for="Q3b"> 13 planets</label>
+                <input type="radio" name="Q3" id="Q3c" value="c"><label for="Q3c"> 8 planets</label>
+                <input type="radio" name="Q3" id="Q3d" value="d"><label for="Q3d"> Over 9000</label>
             </div>
 
             <div class="question">
                 <p>Q4. How long it takes our solar system to orbit around the galactic center?</p>
-                <label><input type="radio" name="Q4" required> 3,750 years</label>
-                <label><input type="radio" name="Q4"> 230 million years</label>
-                <label><input type="radio" name="Q4"> 74 billion years</label>
-                <label><input type="radio" name="Q4"> 365 days</label>
+                <input type="radio" name="Q4" id="Q4a" value="a" required><label for="Q4a"> 3,750 years</label>
+                <input type="radio" name="Q4" id="Q4b" value="b"><label for="Q4b"> 230 million years</label>
+                <input type="radio" name="Q4" id="Q4c" value="c"><label for="Q4c"> 365 days</label>
+                <input type="radio" name="Q4" id="Q4d" value="d"><label for="Q4d"> 74 billion years</label>
             </div>
         </fieldset>
 
@@ -72,6 +85,9 @@
             </div>
 
         </fieldset>
+        <div class="check_button_container">
+            <input type="submit" class="check_answer_button" value="Check Your Answer" onclick="checkAnswer()">
+        </div>
     </form>
 </div>
 </body>

@@ -34,7 +34,8 @@ fieldset {
 }
 
 legend {
-
+    font-weight: bold;
+    color: orange;
 }
 
 .question {
@@ -52,4 +53,46 @@ legend {
 
 input:checked + label {
     color: orange;
+}
+
+.check_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.check_answer_button {
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #d58b29;
+    color: white;
+    cursor: pointer;
+}
+
+.check_answer_button:hover {
+    box-shadow: 0 0px 35px orange;
+}
+
+.result {
+    display: none;
+    position: relative;
+    width: 85%;
+    left: 5%;
+}
+
+.retry_button {
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #d58b29;
+    color: white;
+    cursor: pointer;
 }

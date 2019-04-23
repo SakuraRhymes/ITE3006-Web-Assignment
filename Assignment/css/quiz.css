@@ -4,34 +4,37 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: sans-serif;
 }
 
 .quiz_intro {
+    color: rgb(255, 169, 21);
     text-align: center;
-    font-size: 30px;
+    text-shadow: 3px 3px 10px #ffac21;
+    font-size: 25px;
     padding: 100px 0px 25px;
 }
 
 .quiz {
     color: white;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.42);
     line-height: 1.2;
     text-align: left;
-    width: 70%;
-    padding: 2em 2em 2em;
+    width: 75%;
     margin: 0 auto;
-    box-shadow: -2px 7px 37px 8px rgba(0, 0, 0, 0.52);
     background: rgba(0, 0, 0, 0.66);
-    border: rgba(255, 255, 255, 0.45) 6px double;
 }
 
 fieldset {
-    border: 3px rgba(255, 255, 255, 0.56) solid;
+    border: 3px rgba(255, 255, 255, 0.32) solid;
     border-radius: 10px;
     padding: 20px;
+}
+
+legend {
+
 }
 
 .question {
@@ -45,4 +48,8 @@ fieldset {
 .question label {
     display: inline-block;
     margin: 0px 15px;
+}
+
+input:checked + label {
+    color: orange;
 }

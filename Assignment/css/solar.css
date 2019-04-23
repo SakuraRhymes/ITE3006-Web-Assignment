@@ -20,6 +20,7 @@ html, body {
     background-color: transparent;
     border-radius: 50%;
     border: 1px red solid;
+    cursor: pointer;
 }
 
 .btn_Sun {

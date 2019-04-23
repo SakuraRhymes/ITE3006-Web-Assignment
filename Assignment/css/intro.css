@@ -1,0 +1,21 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+.intro_container .planet_pic, .title {
+    text-align: center;
+}
+
+.title {
+    font-size: 25px;
+    line-height: 2;
+}
+
+.description {
+    line-height: 1.3;
+}
+
+* {
+    border: 1px #ffbee8 solid !important;
+}

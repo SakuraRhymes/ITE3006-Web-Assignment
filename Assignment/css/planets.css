@@ -6,28 +6,33 @@ body {
 }
 
 .planet_pic {
-    float:left; 
+    float: left;
 }
-container{
+
+.Container {
     position: absolute;
-    top:48px;
+    top: 48px;
 }
-.Earth{
+
+.Earth {
     color: cornflowerblue;
 }
-.Venus{
+
+.Venus {
     color: Khaki;
 }
-.Mercury{
+
+.Mercury {
     color: aquamarine;
 }
+
 table {
-  border-collapse: collapse;
-  width: 70%;
+    border-collapse: collapse;
+    width: 70%;
 }
 
 td, th {
-  border: 1px solid #ccff99;
-  text-align: left;
-  padding: 8px;
+    border: 1px solid #ccff99;
+    text-align: left;
+    padding: 8px;
 }

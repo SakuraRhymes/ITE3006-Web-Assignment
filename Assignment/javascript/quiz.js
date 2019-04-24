@@ -90,5 +90,6 @@ function checkAnswer() {
 
     resultContainer.style.display = "inherit";
     document.querySelector(".check_answer_button").style.display = "none";
+    document.documentElement.scrollTop = 0;
     event.preventDefault();
 }

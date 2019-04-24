@@ -6,7 +6,7 @@ body {
     background-position: center center;
     background-attachment: fixed;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family: sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .quiz {
     color: white;
-    line-height: 1.2;
+    line-height: 1;
     text-align: left;
     width: 75%;
     margin: 0 auto;
@@ -34,6 +34,7 @@ fieldset {
 }
 
 legend {
+    font-size: 20px;
     font-weight: bold;
     color: orange;
 }
@@ -43,6 +44,7 @@ legend {
 }
 
 .question p {
+    font-size: 18px;
     margin: 15px 0px;
 }
 
@@ -53,6 +55,82 @@ legend {
 
 input:checked + label {
     color: orange;
+}
+
+.Q5 {
+    height: 20px;
+    width: 230px;
+    font-size: 15px;
+}
+
+.Q6_range_container {
+    width: 350px;
+}
+
+.Q6_range_input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #c1c1c1;
+    outline: none;
+}
+
+.Q6_range_input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: orange;
+    cursor: pointer;
+}
+
+.Q6_range_value {
+    color: orange;
+}
+
+.Q7 {
+    height: 25px;
+    width: 70px;
+}
+
+.Q8 {
+    color: orange;
+}
+
+.Q8_add_button {
+    background-color: orange;
+    border: 1px orange solid;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.Q8_add_button:hover {
+    box-shadow: 0px 0px 10px 3px orange;
+}
+
+.Q8_add_button:focus {
+    outline: none;
+}
+
+.Q9_container td {
+    width: 45%;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.Q9_container img {
+    width: 80%;
+    height: 65%;
+    border: 1px orange solid;
+}
+
+input[type=checkbox] {
+    appearance: none;
 }
 
 .check_button_container {
@@ -73,7 +151,7 @@ input:checked + label {
 }
 
 .check_answer_button:hover {
-    box-shadow: 0 0px 35px orange;
+    box-shadow: 0px 0px 35px orange;
 }
 
 .result {
@@ -99,4 +177,8 @@ input:checked + label {
 
 .retry_button:hover {
     box-shadow: 0 0px 25px orange;
+}
+
+* {
+    /*border: 1px red solid !important;*/
 }

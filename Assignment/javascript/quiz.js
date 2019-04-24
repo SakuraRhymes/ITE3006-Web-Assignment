@@ -1,3 +1,16 @@
+function Q6RangeValue() {
+    var range = document.querySelector(".Q6_range_input");
+    var value = document.querySelector(".Q6_range_value");
+
+    value.innerHTML = range.value;
+}
+
+function Q8Add() {
+    var value = document.querySelector(".Q8");
+
+    value.innerHTML = (parseInt(value.innerHTML) + 1);
+}
+
 function checkAnswer() {
     var correctAnswerList = ["b", "c", "c", "d"];
     var playerAnswerList = document.querySelectorAll(".question input:checked");

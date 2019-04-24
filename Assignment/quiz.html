@@ -40,11 +40,11 @@
             <legend>Part 1 : Solar System</legend>
 
             <div class="question">
-                <p>Q1. What is the radius of the Sun?</p>
-                <input type="radio" name="Q1" id="Q1a" value="a" required><label for="Q1a"> ~160,000m</label>
-                <input type="radio" name="Q1" id="Q1b" value="b"><label for="Q1b"> ~700,000km</label>
-                <input type="radio" name="Q1" id="Q1c" value="c"><label for="Q1c"> ~580,000cm</label>
-                <input type="radio" name="Q1" id="Q1d" value="d"><label for="Q1d"> ~3,250ly</label>
+                <p>Q1. Where is our solar system located?</p>
+                <input type="radio" name="Q1" id="Q1a" value="a" required><label for="Q1a"> Andromeda</label>
+                <input type="radio" name="Q1" id="Q1b" value="b"><label for="Q1b"> Milky Way</label>
+                <input type="radio" name="Q1" id="Q1c" value="c"><label for="Q1c"> Cartwheel</label>
+                <input type="radio" name="Q1" id="Q1d" value="d"><label for="Q1d"> Tadpole</label>
             </div>
 
             <div class="question">
@@ -78,10 +78,68 @@
         <br>
 
         <fieldset>
-            <legend>Part 2 : Earth</legend>
+            <legend>Part 2 : Sun</legend>
 
             <div class="question">
+                <p>Q5. What is the Sun's star type?</p>
+                <div>
+                    <input type="text" class="Q5" required>
+                </div>
+            </div>
 
+            <div class="question">
+                <p>Q6. How far away is the Sun fom the Galactic Center?</p>
+                <div class="Q6_range_container">
+                    <input type="range" min="10000" max="50000" value="10000" class="Q6_range_input" oninput="Q6RangeValue()" required>
+                </div>
+                <br>
+                <span class="Q6_range_value">10000</span> light years
+            </div>
+
+            <div class="question">
+                <p>Q7. What is the color of the Sun?</p>
+                <div>
+                    <input type="color" class="Q7" required>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Part 3 : Earth</legend>
+
+            <div class="question">
+                <p>Q8. What is the radius of the Earth?</p>
+                <div>
+                    <span class="Q8">1</span> km
+                    <input type="button" class="Q8_add_button" value="+" onclick="Q8Add()" required>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Q9. Which of the pictures below are the Earth?</p>
+                <div>
+                    <table class="Q9_container">
+                        <tr>
+                            <td><img src="assets/picture/earth_A.jpg" height="427" width="800"/></td>
+                            <td><img src="assets/picture/earth_B.jpg" height="465" width="600"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Q9" value="Q9a" required></td>
+                            <td><input type="checkbox" name="Q9" value="Q9b"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/picture/earth_C.jpg" height="436" width="653"/></td>
+                            <td><img src="assets/picture/earth_D.jpg" height="401" width="400"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Q9" value="Q9c"></td>
+                            <td><input type="checkbox" name="Q9" value="Q9d"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
         </fieldset>

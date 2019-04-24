@@ -29,7 +29,7 @@
 
             <input type="button" class="retry_button" value="Try Again" onclick="window.location.reload()">
             <div>
-                Your total score was <span class="score">?</span> out of 4 !
+                Your total score was <span class="score">?</span> out of 9 !
             </div>
 
         </fieldset>
@@ -119,24 +119,28 @@
             </div>
 
             <div class="question">
-                <p>Q9. Which of the pictures below are the Earth?</p>
+                <p>Q9. Which of the following images are the Earth?</p>
                 <div>
                     <table class="Q9_container">
                         <tr>
-                            <td><img src="assets/picture/earth_A.jpg" height="427" width="800"/></td>
-                            <td><img src="assets/picture/earth_B.jpg" height="465" width="600"/></td>
+                            <td>
+                                <input type="checkbox" name="Q9" class="Q9_pic" id="Q9a" value="Q9a" required>
+                                <label for="Q9a"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Q9" class="Q9_pic" id="Q9b" value="Q9b">
+                                <label for="Q9b"></label>
+                            </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="Q9" value="Q9a" required></td>
-                            <td><input type="checkbox" name="Q9" value="Q9b"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets/picture/earth_C.jpg" height="436" width="653"/></td>
-                            <td><img src="assets/picture/earth_D.jpg" height="401" width="400"/></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="Q9" value="Q9c"></td>
-                            <td><input type="checkbox" name="Q9" value="Q9d"></td>
+                            <td>
+                                <input type="checkbox" name="Q9" class="Q9_pic" id="Q9c" value="Q9c">
+                                <label for="Q9c"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Q9" class="Q9_pic" id="Q9d" value="Q9d">
+                                <label for="Q9d"></label>
+                            </td>
                         </tr>
                     </table>
                 </div>

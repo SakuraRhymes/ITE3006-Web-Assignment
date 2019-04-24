@@ -119,18 +119,50 @@ input:checked + label {
 
 .Q9_container td {
     width: 45%;
-    vertical-align: middle;
-    justify-content: center;
+    padding-bottom: 15px;
 }
 
-.Q9_container img {
-    width: 80%;
-    height: 65%;
-    border: 1px orange solid;
+.Q9_container input[type=checkbox] {
+    display: none;
 }
 
-input[type=checkbox] {
-    appearance: none;
+.Q9_container input[type=checkbox]:checked + label {
+    border: 2px orange solid;
+    box-shadow: 0px 0px 10px 3px orange;
+}
+
+.Q9_pic + label {
+    margin: 0px;
+    border: 2px white solid;
+    background-repeat: no-repeat;
+}
+
+#Q9a + label {
+    background-image: url(../assets/picture/earth_A.jpg);
+    background-size: 400px 300px;
+    width: 400px;
+    height: 300px;
+}
+
+#Q9b + label {
+    background-image: url(../assets/picture/earth_B.jpg);
+    background-size: 400px 300px;
+    width: 400px;
+    height: 300px;
+}
+
+#Q9c + label {
+    background-image: url(../assets/picture/earth_C.jpg);
+    background-size: 450px 300px;
+    width: 400px;
+    height: 300px;
+}
+
+#Q9d + label {
+    background-image: url(../assets/picture/earth_D.jpg);
+    background-size: 330px 300px;
+    width: 400px;
+    height: 300px;
 }
 
 .check_button_container {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+<div class="bg">
+    <img src="assets/picture/about-background.jpg" alt="">
+</div>
+
+<div class="container">
+    <div class="info">
+        <h1>About</h1>
+        This is a website that introduce the solar system: a planetary system that we call home.
+        The website contain information about the Sun and the planets that orbit around it.
+        We also provided a mini quiz and a matching game to test your knowledge about the solar system.
+    </div>
+
+    <div class="reference">
+        <h1>Reference</h1>
+        Below are the references to the information and media that were included in our website.
+        <br>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Wiki">Wikipedia</a>
+        <br>
+        <a href="https://solarsystem.nasa.gov">NASA Science</a>
+    </div>
+
+    <div class="feedback">
+        <h1>Feedback</h1>
+        We welcome any feedback regarding this solar system website. Please leave your comments or questions down below.
+        <br>
+        <br>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="first_name">First Name</label>
+                <br>
+                <input type="text" id="first_name" required>
+            </div>
+            <div>
+                <label for="last_name">Last Name</label>
+                <br>
+                <input type="text" id="last_name" required>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <br>
+                <input type="email" id="email" required>
+            </div>
+            <div class="gender">
+                <label>Gender</label>
+                <br>
+                <input type="radio" name="gender" id="M" value="M" required><label for="M">Male</label>
+                <input type="radio" name="gender" id="F" value="F"><label for="F">Female</label>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <br>
+                <select id="country" name="country" required>
+                    <option value="CN">China</option>
+                    <option value="US">USA</option>
+                    <option value="RU">Russia</option>
+                    <option value="AU">Australia</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="OT">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment">Comment</label>
+                <br>
+                <textarea name="comment" id="comment" cols="50" rows="10" maxlength="300" placeholder="Please leave your comment here. (Maximum 300 words)" required></textarea>
+            </div>
+            <br>
+            <input type="submit" class="submit_button" value="Send Feedback">
+        </form>
+    </div>
+</div>
+</body>
+</html>

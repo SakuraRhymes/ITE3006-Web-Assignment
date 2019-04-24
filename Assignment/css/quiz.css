@@ -96,3 +96,7 @@ input:checked + label {
     color: white;
     cursor: pointer;
 }
+
+.retry_button:hover {
+    box-shadow: 0 0px 25px orange;
+}

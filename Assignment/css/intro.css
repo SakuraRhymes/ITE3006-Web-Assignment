@@ -23,6 +23,7 @@ body {
 }
 
 .planet_description {
+    font-size: 13px;
     font-style: italic;
     font-weight: lighter;
 }

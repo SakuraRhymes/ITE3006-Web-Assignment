@@ -139,30 +139,30 @@ input:checked + label {
 
 #Q9a + label {
     background-image: url(../assets/picture/earth_A.jpg);
-    background-size: 400px 300px;
-    width: 400px;
-    height: 300px;
+    background-size: 30vw 40vh;
+    width: 30vw;
+    height: 40vh;
 }
 
 #Q9b + label {
     background-image: url(../assets/picture/earth_B.jpg);
-    background-size: 400px 300px;
-    width: 400px;
-    height: 300px;
+    background-size: 30vw 40vh;
+    width: 30vw;
+    height: 40vh;
 }
 
 #Q9c + label {
     background-image: url(../assets/picture/earth_C.jpg);
-    background-size: 450px 300px;
-    width: 400px;
-    height: 300px;
+    background-size: 30vw 40vh;
+    width: 30vw;
+    height: 40vh;
 }
 
 #Q9d + label {
     background-image: url(../assets/picture/earth_D.jpg);
-    background-size: 330px 300px;
-    width: 400px;
-    height: 300px;
+    background-size: 30vw 40vh;
+    width: 30vw;
+    height: 40vh;
 }
 
 .check_button_container {

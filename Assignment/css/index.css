@@ -16,14 +16,14 @@
     text-decoration: none;
     position: absolute;
     color: rgba(255, 255, 255, 0.8);
-    top: 90%;
+    top: 87%;
     border: 1px transparent solid;
     border-radius: 5px;
     background-color: #d57a16;
     font-family: sans-serif;
     font-size: 25px;
     margin: 0 auto;
-    padding: 13px 30px;
+    padding: 12px 27px;
     mix-blend-mode: screen;
 }
 

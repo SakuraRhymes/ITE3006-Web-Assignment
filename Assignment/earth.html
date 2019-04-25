@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Earth</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/planets.css" type="text/css">
-    <link rel="stylesheet" href="css/topbar2.css" type="text/css">
+    <link rel="stylesheet" href="css/topbar.css" type="text/css">
     <script src="javascript/planets.js"></script>
 </head>
 
 <body onload="showPhoto(photoIndex)">
+
 <div class="topbar">
     <a href="index.html">Home</a>
     <a href="solar.html">Solar System</a>
-
-    <ul>
-        <li>
-            <a class="active" href="#">Planets</a>
-            <ul class="sub">
-                <li><a href="mercury.html">Mercury</a></li>
-                <li><a href="venus.html">Venus</a></li>
-                <li class="active"><a href="earth.html">Earth</a></li>
-                <li><a href="mars.html">Mars</a></li>
-                <li><a href="jupiter.html">Jupiter</a></li>
-                <li><a href="saturn.html">Saturn</a></li>
-                <li><a href="uranus.html">Uranus</a></li>
-                <li><a href="neptune.html">Neptune</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div class="dropdown_container">
+        <a href="" class="drop_button">Planets</a>
+        <div class="dropdown_content">
+            <a href="sun.html">Sun</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="earth.html" class="active">Earth</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </div>
     <a href="quiz.html">Mini Quiz</a>
     <a href="about.html">About</a>
 </div>

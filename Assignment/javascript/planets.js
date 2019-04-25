@@ -1,20 +1,12 @@
-var photoIndex = 1;
+var photoIndex = 0;
 
-function plusPhoto(n) {
-    showPhoto(photoIndex += n);
-}
-
-function showPhoto(n) {
-    var i;
+function nextPhoto() {
+    photoIndex++;
     var photo = document.getElementsByClassName("photo");
-    if (n > photo.length) {
-        photoIndex = 1;
-    }
-    if (n < 1) {
-        photoIndex = photo.length;
-    }
+    photoIndex = photoIndex % photo.length;
     for (i = 0; i < photo.length; i++) {
         photo[i].style.display = "none";
     }
-    photo[photoIndex - 1].style.display = "block";
+    photo[photoIndex].style.display = "block";
+
 }

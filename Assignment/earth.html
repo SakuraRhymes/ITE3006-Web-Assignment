@@ -10,8 +10,7 @@
     <script src="javascript/planets.js"></script>
 </head>
 
-<body onload="showPhoto(photoIndex)">
-
+<body onload="nextPhoto()">
 <div class="topbar">
     <a href="index.html">Home</a>
     <a href="solar.html">Solar System</a>
@@ -33,53 +32,55 @@
     <a href="about.html">About</a>
 </div>
 
-<div class="container Earth">
+<div class="Earth">
     <div class="planet_pic">
     </div>
-    <div class="overview">
-        <h1>Earth</h1>
-        <br> Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.
-    </div>
-    <br>
-    <br>
-    <div class="didYouKnowContainer">
-        <div class="didYouKnow">
-            <h3>Did You Know?</h3>
-            <div class="didYouKnowContent">
-                <br> Laika the dog was the first Earthling to orbit Earth aboard the Soviet Union's Sputnik 2 in 1957. She did not survive the trip. A few years later, the next two Soviet space dogs—Belka and Strelka—became the first living creatures
-                to return from space alive—paving the way for future human explorers.
+    <div class="main">
+        <div class="overview">
+            <h1>Earth</h1>
+            <br> Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.
+        </div>
+        <br>
+        <br>
+        <div class="didYouKnowContainer">
+            <div class="didYouKnow">
+                <h3>Did You Know?</h3>
+                <div class="didYouKnowContent">
+                    <br> Laika the dog was the first Earthling to orbit Earth aboard the Soviet Union's Sputnik 2 in 1957. She did not survive the trip. A few years later, the next two Soviet space
+                    dogs—Belka and Strelka—became the first living creatures to return from space alive—paving the way for future human explorers.
+                </div>
             </div>
         </div>
-    </div>
-    <br>
-    <h3>Data of Earth</h3>
-    <div class="dataOfContainer">
-        <div class="dataOfContent">
-            <div class="radius">
-                <br>
-                <br>AVERAGE ORBIT DISTANCE 149,598,262 km
-            </div>
-            <div class="radius">
-                <br>
-                <br>MEAN ORBIT VELOCITY 107,218 km/h
-            </div>
-            <div class="radius">
-                <br>
-                <br>ORBIT ECCENTRICITY 0.01671123
-            </div>
-            <div class="radius">
-                <br>
-                <br>EQUATORIAL RADIUS
-                <br> 6,371.00 km
-            </div>
-            <div class="radius">
-                <br>
-                <br>VOLUME 1,083,206,916,846 km3
-            </div>
-            <div class="radius">
-                <br>
-                <br> MASS
-                <br> 5,972,190 x 1018kg
+        <br>
+        <h3>Data of Earth</h3>
+        <div class="dataOfContainer">
+            <div class="dataOfContent">
+                <div class="radius">
+                    <br>
+                    <br>AVERAGE ORBIT DISTANCE 149,598,262 km
+                </div>
+                <div class="radius">
+                    <br>
+                    <br>MEAN ORBIT VELOCITY 107,218 km/h
+                </div>
+                <div class="radius">
+                    <br>
+                    <br>ORBIT ECCENTRICITY 0.01671123
+                </div>
+                <div class="radius">
+                    <br>
+                    <br>EQUATORIAL RADIUS
+                    <br> 6,371.00 km
+                </div>
+                <div class="radius">
+                    <br>
+                    <br>VOLUME 1,083,206,916,846 km3
+                </div>
+                <div class="radius">
+                    <br>
+                    <br> MASS
+                    <br> 5,972,190 x 1018kg
+                </div>
             </div>
         </div>
     </div>
@@ -92,8 +93,9 @@
                 <img src="assets/picture/earthphoto2.jpg">
             </div>
 
-            <a class="prev" onclick="plusPhoto(-1)">&#10094;</a>
-            <a class="next" onclick="plusPhoto(1)">&#10095;</a>
+            <a class="prev" onclick="nextPhoto()">&#10094;</a>
+            <a class="next" onclick="nextPhoto()">&#10095;</a>
+
         </div>
     </div>
 </div>

@@ -4,43 +4,44 @@ body {
     color: white;
     background-color: black;
 }
-
 .planet_pic img {
     height: 500px
 }
-
 .container {
     position: absolute;
 }
-
 .Earth .planet_pic {
-    background-image: url(../assets/picture/earth.png);
+    background-image: url(../assets/picture/earth_banner.jpg);
+}
+
+.planet_pic {
     background-size: cover;
     position: relative;
     z-index: 3;
     background-position: center;
-    height: 500px;
-}
+    height: 350px;
 
+}
 .Earth {
-    width: 97.4%;
     color: cornflowerblue;
     position: relative;
+}
+
+.main {
+    padding: 90px
 }
 
 .Venus {
     color: Khaki;
 }
-
 .Mercury {
     color: aquamarine;
 }
-
 .didYouKnow:hover {
+    background-color: #222;
     height: 200px;
     width: 98%;
 }
-
 .didYouKnow {
     width: 160px;
     height: 65px;
@@ -51,23 +52,9 @@ body {
     text-shadow: 38px 5px 5px;
     transition: height 2s 1s, width 1s;
 }
-
 .didYouKnowContainer {
     padding: 3px;
 }
-
-table {
-    border-collapse: collapse;
-    width: 70%;
-}
-
-td,
-th {
-    border: 1px solid #ccff99;
-    text-align: left;
-    padding: 8px;
-}
-
 .radius {
     display: inline-block;
     border-radius: 999px;
@@ -79,12 +66,10 @@ th {
     font-size: 30px;
     text-align: center;
 }
-
 .dataOfContainer {
     display: flex;
     justify-content: center;
 }
-
 .dataOfContent {
     display: flex;
     flex-flow: row wrap;
@@ -93,11 +78,15 @@ th {
     width: 100%
 }
 
+.galleryContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .gallery {
     max-width: 1280px;
     position: relative;
 }
-
 .photo {
     display: none;
 }
@@ -105,23 +94,20 @@ th {
 .photo img {
     width: 100%
 }
-
 .prev, .next {
-    cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    font-size: 35px;
     user-select: none;
 }
-
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
+
+/*
+* {
+    border: 1px red solid !important;
+}*/

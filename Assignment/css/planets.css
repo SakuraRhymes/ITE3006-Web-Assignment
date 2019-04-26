@@ -2,15 +2,22 @@ body {
     font-family: sans-serif;
     font-size: 18px;
     color: white;
-    background-color: black;
+    background-color: white;
+    background-image: url("../assets/picture/galaxy_bg01.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150%;
 }
+
 .planet_pic img {
     height: 500px
 }
+
 .container {
     position: absolute;
 }
-.Earth .planet_pic {
+
+.planets .planet_pic {
     background-image: url(../assets/picture/earth_banner.jpg);
 }
 
@@ -20,56 +27,75 @@ body {
     z-index: 3;
     background-position: center;
     height: 350px;
-
 }
-.Earth {
-    color: cornflowerblue;
+
+.overviewContent {
+    margin: 10px 90px;
+}
+
+.planets {
     position: relative;
 }
 
-.main {
-    padding: 90px
+.cutinColor1 {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.Venus {
-    color: Khaki;
+.overviewContent {
+    line-height: 26px;
 }
-.Mercury {
-    color: aquamarine;
-}
+
 .didYouKnow:hover {
-    background-color: #222;
-    height: 200px;
-    width: 98%;
+    box-shadow: 0px 0px 10px 3px orange;
+    height: 230px;
+    width: 97%;
 }
+
 .didYouKnow {
-    width: 160px;
-    height: 65px;
+    width: 170px;
+    height: 15px;
     overflow: hidden;
     border-radius: 25px;
     border: 2px dashed;
-    padding: 1px 10px;
-    text-shadow: 38px 5px 5px;
+    padding: 20px 10px;
     transition: height 2s 1s, width 1s;
 }
+
 .didYouKnowContainer {
-    padding: 3px;
+    padding: 10px;
+    margin: 0px 90px;
 }
+
+h3 {
+    padding: 20px 0px;
+    margin: 10px 85px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
 .radius {
     display: inline-block;
     border-radius: 999px;
-    border: 2px #ccff99 solid;
-    padding: 20px;
+    border: 2px coral solid;
+    padding: 15px;
     margin: 20px;
-    width: 250px;
-    height: 250px;
-    font-size: 30px;
+    width: 140px;
+    height: 140px;
+    font-size: 15px;
     text-align: center;
+    background-color: #949ba8;
 }
+
 .dataOfContainer {
+    letter-spacing: 1px;
+    line-height: 26px;
+    padding: 10px;
+    margin: 0px 90px;
     display: flex;
     justify-content: center;
 }
+
 .dataOfContent {
     display: flex;
     flex-flow: row wrap;
@@ -79,14 +105,26 @@ body {
 }
 
 .galleryContainer {
-    display: flex;
+    padding: 10px;
+    margin: 10px 90px;
+    border: 2px #ff9933 solid;
+    border-radius: 99px;
+    display: block;
     justify-content: center;
+    background-color: rgb(52, 53, 53);
+}
+
+.galleryContainer .galleryHeading {
+    text-align: center;
+    font-size: 42px;
 }
 
 .gallery {
+    padding: 10px 30px;
     max-width: 1280px;
     position: relative;
 }
+
 .photo {
     display: none;
 }
@@ -94,20 +132,48 @@ body {
 .photo img {
     width: 100%
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     padding: 10px;
     color: white;
     font-weight: bold;
     font-size: 35px;
     user-select: none;
 }
+
 .next {
-    right: 0;
+    right: 30px;
 }
 
-/*
-* {
-    border: 1px red solid !important;
-}*/
+@media only screen and (max-width: 750px) {
+    body {
+        background-size: 100%;
+        background-image: url(../assets/picture/galaxy_bg03.jpg);
+    }
+
+    .overviewContent {
+        font-size: 15px;
+    }
+
+    .didYouKnowContent {
+        font-size: 15px;
+    }
+
+    .galleryContainer {
+        border: none;
+        padding: 0px;
+        background-color: rgba(52, 53, 53, 0);;
+    }
+
+    .galleryContainer .galleryHeading {
+        font-size: 20px;
+    }
+
+    .prev,
+    .next {
+        font-size: 20px;
+    }
+}

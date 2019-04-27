@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mars</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/planets.css" type="text/css">
+    <link rel="stylesheet" href="css/topbar.css" type="text/css">
+    <script src="javascript/planets.js"></script>
+    <script src="javascript/topbar.js"></script>
+</head>
+
+<body onload="nextPhoto(1)">
+
+<div class="topbar">
+    <a href="index.html">Home</a>
+    <a href="solar.html">Solar System</a>
+    <div class="dropdown_container">
+        <a href="" class="drop_button">Planets</a>
+        <div class="dropdown_content">
+            <a href="sun.html">Sun</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="earth.html">Earth</a>
+            <a href="mars.html" class="active">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </div>
+    <a href="quiz.html">Mini Quiz</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
+</div>
+
+<div class="planets mars cutinColor2">
+    <div class="planet_pic">
+    </div>
+    <div class="main">
+        <div class="overview cutinColor1">
+            <h3>Mars</h3>
+            <div class="overviewContent">Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere.
+                <br>
+            </div>
+        </div>
+        <div class="didYouKnowContainer">
+            <div class="didYouKnow">
+                <h1>Did You Know?</h1>
+                <div class="didYouKnowContent">
+                    <br>With about 1/3 the gravity of Earth, anyone on Mars could dunk a basketball in a regulation goal. But the required spacesuit might cut down on your edge.
+                </div>
+            </div>
+        </div>
+        <div class="cutinColor1">
+            <h3>Data of Venus</h3>
+            <div class="dataOfContainer">
+                <div class="dataOfContent">
+                    <div class="radius">
+                        <br>
+                        <div>AVERAGE ORBIT DISTANCE</div>
+                        227,943,824 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MEAN ORBIT VELOCITY</div>
+                        86,677 km/h
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>ORBIT ECCENTRICITY</div>
+                        0.0933941
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>EQUATORIAL RADIUS</div>
+                        3,389.5 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>VOLUME</div>
+                        163,115 x 10<sup>6</sup> km<sup>3</sup>
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MASS</div>
+                        641,693 x 10<sup>18</sup> kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galleryContainer">
+            <div class="galleryHeading">Gallery</div>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="assets/picture/planets/mars/marsphoto1.jpg">
+                </div>
+                <div class="photo">
+                    <img src="assets/picture/planets/mars/marsphoto2.jpg">
+                </div>
+                <div class="photo">
+                    <img src="assets/picture/planets/mars/marsphoto3.jpg">
+                </div>
+                <a class="prev" onclick="nextPhoto(-1)">&#10094;</a>
+                <a class="next" onclick="nextPhoto(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

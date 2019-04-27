@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Saturn</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/planets.css" type="text/css">
+    <link rel="stylesheet" href="css/topbar.css" type="text/css">
+    <script src="javascript/planets.js"></script>
+    <script src="javascript/topbar.js"></script>
+</head>
+
+<body onload="nextPhoto(1)">
+
+<div class="topbar">
+    <a href="index.html">Home</a>
+    <a href="solar.html">Solar System</a>
+    <div class="dropdown_container">
+        <a href="" class="drop_button">Planets</a>
+        <div class="dropdown_content">
+            <a href="sun.html">Sun</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="earth.html">Earth</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html" class="active">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </div>
+    <a href="quiz.html">Mini Quiz</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
+</div>
+
+<div class="planets saturn cutinColor2">
+    <div class="planet_pic">
+    </div>
+    <div class="main">
+        <div class="overview cutinColor1">
+            <h3>Saturn</h3>
+            <div class="overviewContent">Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with thousands of beautiful ringlets, Saturn is unique among the planets.
+                <br>
+            </div>
+        </div>
+        <div class="didYouKnowContainer">
+            <div class="didYouKnow">
+                <h1>Did You Know?</h1>
+                <div class="didYouKnowContent">
+                    <br> It is not the only planet to have rings—made of chunks of ice and rock—but none are as spectacular or as complicated as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.
+                </div>
+            </div>
+        </div>
+        <div class="cutinColor1">
+            <h3>Data of Saturn</h3>
+            <div class="dataOfContainer">
+                <div class="dataOfContent">
+                    <div class="radius">
+                        <br>
+                        <div>AVERAGE ORBIT DISTANCE</div>
+                        1,426,666,422 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MEAN ORBIT VELOCITY</div>
+                        34,701 km/h
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>ORBIT ECCENTRICITY</div>
+                        0.05386179
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>EQUATORIAL RADIUS</div>
+                        58,232 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>VOLUME</div>
+                        827 x 10<sup>12</sup> km<sup>3</sup>
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MASS</div>
+                        568,319 x 10<sup>21</sup> kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galleryContainer">
+            <div class="galleryHeading">Gallery</div>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="assets/picture/planets/saturn/saturnphoto1.jpg">
+                </div>
+                <div class="photo">
+                    <img src="assets/picture/planets/saturn/saturnphoto2.jpg">
+                </div>
+                <a class="prev" onclick="nextPhoto(-1)">&#10094;</a>
+                <a class="next" onclick="nextPhoto(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

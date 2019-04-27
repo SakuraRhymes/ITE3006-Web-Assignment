@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uranus</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/planets.css" type="text/css">
+    <link rel="stylesheet" href="css/topbar.css" type="text/css">
+    <script src="javascript/planets.js"></script>
+    <script src="javascript/topbar.js"></script>
+</head>
+
+<body onload="nextPhoto(1)">
+
+<div class="topbar">
+    <a href="index.html">Home</a>
+    <a href="solar.html">Solar System</a>
+    <div class="dropdown_container">
+        <a href="" class="drop_button">Planets</a>
+        <div class="dropdown_content">
+            <a href="sun.html">Sun</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="earth.html">Earth</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html" class="active">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </div>
+    <a href="quiz.html">Mini Quiz</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
+</div>
+
+<div class="planets uranus cutinColor2">
+    <div class="planet_pic">
+    </div>
+    <div class="main">
+        <div class="overview cutinColor1">
+            <h3>Uranus</h3>
+            <div class="overviewContent">The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.
+                <br>
+            </div>
+        </div>
+        <div class="didYouKnowContainer">
+            <div class="didYouKnow">
+                <h1>Did You Know?</h1>
+                <div class="didYouKnowContent">
+                    <br> Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead the planet was named for Uranus, the Greek god of the sky, as suggested by Johann Bode.​
+                </div>
+            </div>
+        </div>
+        <div class="cutinColor1">
+            <h3>Data of Uranus</h3>
+            <div class="dataOfContainer">
+                <div class="dataOfContent">
+                    <div class="radius">
+                        <br>
+                        <div>AVERAGE ORBIT DISTANCE</div>
+                        2,870,658,186 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MEAN ORBIT VELOCITY</div>
+                        24,477 km/h
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>ORBIT ECCENTRICITY</div>
+                        0.04725744
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>EQUATORIAL RADIUS</div>
+                        25,362 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>VOLUME</div>
+                        68 x 10<sup>12</sup> km<sup>3</sup>
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MASS</div>
+                        86,810 x 10<sup>21</sup> kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galleryContainer">
+            <div class="galleryHeading">Gallery</div>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="assets/picture/planets/uranus/uranusphoto1.jpg">
+                </div>
+                <div class="photo">
+                    <img src="assets/picture/planets/uranus/uranusphoto2.jpg">
+                </div>
+                <a class="prev" onclick="nextPhoto(-1)">&#10094;</a>
+                <a class="next" onclick="nextPhoto(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

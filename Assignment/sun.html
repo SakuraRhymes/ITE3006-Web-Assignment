@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sun</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/planets.css" type="text/css">
+    <link rel="stylesheet" href="css/topbar.css" type="text/css">
+    <script src="javascript/planets.js"></script>
+    <script src="javascript/topbar.js"></script>
+</head>
+
+<body onload="nextPhoto(1)">
+
+<div class="topbar">
+    <a href="index.html">Home</a>
+    <a href="solar.html">Solar System</a>
+    <div class="dropdown_container">
+        <a href="" class="drop_button">Planets</a>
+        <div class="dropdown_content">
+            <a href="sun.html" class="active">Sun</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="earth.html">Earth</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </div>
+    <a href="quiz.html">Mini Quiz</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
+</div>
+
+<div class="planets sun cutinColor2">
+    <div class="planet_pic">
+    </div>
+    <div class="main">
+        <div class="overview cutinColor1">
+            <h3>Sun</h3>
+            <div class="overviewContent">The Sun—the heart of our solar system—is a yellow dwarf star, a hot ball of glowing gases.The connection and interactions between the Sun and Earth drive the seasons, ocean currents, weather, climate,
+                radiation belts and aurorae.
+                <br>
+            </div>
+        </div>
+        <div class="didYouKnowContainer">
+            <div class="didYouKnow">
+                <h1>Did You Know?</h1>
+                <div class="didYouKnowContent">
+                    <br> The Sun’s visible surface sometimes has dark sunspots, which are areas of intense magnetic activity that can lead to solar explosions.If the Sun were as tall as a typical front door, Earth would be about the size of a nickel.
+                </div>
+            </div>
+        </div>
+        <div class="cutinColor1">
+            <h3>Data of Sun</h3>
+            <div class="dataOfContainer">
+                <div class="dataOfContent">
+                    <div class="radius">
+                        <br>
+                        <div>EQUATORIAL RADIUS</div>
+                        695,508 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>EQUATORIAL CIRCUMFERENCE</div>
+                        4,370,005.6 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>ESCAPE VELOCITY</div>
+                        6.177 x 10<sup>5</sup>m/s
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>EQUATORIAL RADIUS</div>
+                        6,371 km
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>VOLUME</div>
+                        1.40927 x 10<sub>18</sub> km<sup>3</sup>
+                    </div>
+                    <div class="radius">
+                        <br>
+                        <div>MASS</div>
+                        1.989 x 10<sub>30</sub> kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galleryContainer">
+            <div class="galleryHeading">Gallery</div>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="assets/picture/planets/sun/sunphoto1.jpg">
+                </div>
+                <div class="photo">
+                    <img src="assets/picture/planets/sun/sunphoto2.jpg">
+                </div>
+                <a class="prev" onclick="nextPhoto(-1)">&#10094;</a>
+                <a class="next" onclick="nextPhoto(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

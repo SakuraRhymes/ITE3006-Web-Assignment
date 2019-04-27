@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url(../assets/picture/universe-background.jpg);
+    background-image: url(../assets/picture/quiz/universe-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -138,28 +138,28 @@ input:checked + label {
 }
 
 #Q9a + label {
-    background-image: url(../assets/picture/earth_A.jpg);
+    background-image: url(../assets/picture/quiz/earth_A.jpg);
     background-size: 30vw 40vh;
     width: 30vw;
     height: 40vh;
 }
 
 #Q9b + label {
-    background-image: url(../assets/picture/earth_B.jpg);
+    background-image: url(../assets/picture/quiz/earth_B.jpg);
     background-size: 30vw 40vh;
     width: 30vw;
     height: 40vh;
 }
 
 #Q9c + label {
-    background-image: url(../assets/picture/earth_C.jpg);
+    background-image: url(../assets/picture/quiz/earth_C.jpg);
     background-size: 30vw 40vh;
     width: 30vw;
     height: 40vh;
 }
 
 #Q9d + label {
-    background-image: url(../assets/picture/earth_D.jpg);
+    background-image: url(../assets/picture/quiz/earth_D.jpg);
     background-size: 30vw 40vh;
     width: 30vw;
     height: 40vh;

@@ -3,23 +3,54 @@ body {
     font-size: 18px;
     color: white;
     background-color: white;
-    background-image: url("../assets/picture/galaxy_bg01.jpg");
+    background-image: url("../assets/picture/planets/galaxy_bg01.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 150%;
 }
-
 .planet_pic img {
     height: 500px
 }
-
 .container {
     position: absolute;
 }
 
-.planets .planet_pic {
-    background-image: url(../assets/picture/earth_banner.jpg);
+.earth .planet_pic {
+    background-image: url(../assets/picture/planets/earth/earth_banner.jpg);
 }
+
+.mercury .planet_pic {
+    background-image: url(../assets/picture/planets/mercury/mercury_banner.jpg);
+}
+
+.sun .planet_pic {
+    background-image: url(../assets/picture/planets/sun/sun_banner.jpg);
+}
+
+.venus .planet_pic {
+    background-image: url(../assets/picture/planets/venus/venus_banner.jpg);
+}
+
+.mars .planet_pic {
+    background-image: url(../assets/picture/planets/mars/mars_banner.jpg);
+}
+
+.jupiter .planet_pic {
+    background-image: url(../assets/picture/planets/jupiter/jupiter_banner.jpg);
+}
+
+.neptune .planet_pic {
+    background-image: url(../assets/picture/planets/neptune/neptune_banner.jpg);
+}
+
+.saturn .planet_pic {
+    background-image: url(../assets/picture/planets/saturn/saturn_banner.jpg);
+}
+
+.uranus .planet_pic {
+    background-image: url(../assets/picture/planets/uranus/uranus_banner.jpg);
+}
+
 
 .planet_pic {
     background-size: cover;
@@ -28,31 +59,24 @@ body {
     background-position: center;
     height: 350px;
 }
-
-.overviewContent {
-    margin: 10px 90px;
-}
-
 .planets {
     position: relative;
 }
-
 .cutinColor1 {
     padding: 10px;
     background: rgba(0, 0, 0, 0.3);
 }
-
 .overviewContent {
+    margin: 20px 105px 50px 105px;
     line-height: 26px;
 }
 
-.didYouKnow:hover {
-    box-shadow: 0px 0px 10px 3px orange;
-    height: 230px;
-    width: 97%;
+.didYouKnowContainer {
+    padding: 10px;
+    margin: 20px 80px;
 }
-
 .didYouKnow {
+    line-height: 26px;
     width: 170px;
     height: 15px;
     overflow: hidden;
@@ -62,29 +86,24 @@ body {
     transition: height 2s 1s, width 1s;
 }
 
-.didYouKnowContainer {
-    padding: 10px;
-    margin: 0px 90px;
+.didYouKnow:hover {
+    box-shadow: 0px 0px 10px 3px orange;
+    height: 230px;
+    width: 97%;
 }
 
+h1 {
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 h3 {
+    color: orange;
     padding: 20px 0px;
     margin: 10px 85px;
     font-weight: bold;
     font-size: 21px;
-}
-
-.radius {
-    display: inline-block;
-    border-radius: 999px;
-    border: 2px coral solid;
-    padding: 15px;
-    margin: 20px;
-    width: 140px;
-    height: 140px;
-    font-size: 15px;
-    text-align: center;
-    background-color: #949ba8;
+    font-family: sans-serif;
 }
 
 .dataOfContainer {
@@ -95,7 +114,19 @@ h3 {
     display: flex;
     justify-content: center;
 }
-
+.radius {
+    box-shadow: 0px 0px 10px 3px orange;
+    display: inline-block;
+    border-radius: 999px;
+    border: 2px coral solid;
+    padding: 15px;
+    margin: 20px;
+    width: 140px;
+    height: 140px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(105, 105, 105, 0.3);;
+}
 .dataOfContent {
     display: flex;
     flex-flow: row wrap;
@@ -104,76 +135,95 @@ h3 {
     width: 100%
 }
 
+.dataOfContent .radius div {
+    color: orange;
+}
 .galleryContainer {
     padding: 10px;
     margin: 10px 90px;
-    border: 2px #ff9933 solid;
-    border-radius: 99px;
     display: block;
     justify-content: center;
-    background-color: rgb(52, 53, 53);
 }
-
 .galleryContainer .galleryHeading {
+    padding: 20px 0px;
     text-align: center;
-    font-size: 42px;
+    font-size: 21px;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
 }
-
 .gallery {
-    padding: 10px 30px;
+    padding: 10px 10px;
     max-width: 1280px;
     position: relative;
+    border: 2px #ff9933 solid;
+    background-color: rgba(52, 53, 53, 0.7);
+    border-radius: 9px;
 }
-
 .photo {
     display: none;
 }
-
 .photo img {
     width: 100%
 }
-
 .prev,
 .next {
+    color: rgba(255, 165, 0, 0.6);
     position: absolute;
     top: 45%;
     padding: 10px;
-    color: white;
     font-weight: bold;
     font-size: 35px;
     user-select: none;
 }
-
 .next {
-    right: 30px;
+    margin: 0px 10px;
+    right: 0px;
 }
 
+.prev:hover,
+.next:hover {
+    color: rgba(255, 165, 0, 1);
+    text-shadow: 0px 0px 20px orange;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
 @media only screen and (max-width: 750px) {
     body {
         background-size: 100%;
-        background-image: url(../assets/picture/galaxy_bg03.jpg);
+        background-image: url(../assets/picture/planets/galaxy_bg02.jpg);
     }
-
     .overviewContent {
         font-size: 15px;
     }
-
     .didYouKnowContent {
         font-size: 15px;
     }
 
-    .galleryContainer {
+    .gallery {
         border: none;
         padding: 0px;
         background-color: rgba(52, 53, 53, 0);;
     }
 
-    .galleryContainer .galleryHeading {
-        font-size: 20px;
+    .galleryContainer {
+        padding: 10px;
+        margin: 10px 10px;
+        display: block;
+        justify-content: center;
     }
 
     .prev,
     .next {
+        margin: 0px;
         font-size: 20px;
     }
 }
+
+/*
+*{
+    border: 1px red solid !important; 
+}*/

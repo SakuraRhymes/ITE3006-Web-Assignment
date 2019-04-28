@@ -1,9 +1,11 @@
+/*general setting*/
 html, body {
     min-width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
+/*set up background image*/
 .container {
     position: absolute;
     top: 0;
@@ -17,6 +19,7 @@ html, body {
     width: 100%;
 }
 
+/*set up planets button for hover*/
 .btn {
     position: absolute;
     background-color: transparent;
@@ -88,11 +91,13 @@ html, body {
     width: 8%;
 }
 
+/*display iframe on hover*/
 .btn:hover ~ #iframe_planet {
     opacity: 1;
     transition: opacity 0.5s;
 }
 
+/*set up planets iframe*/
 #iframe_planet {
     width: 25%;
     height: 57%;
@@ -108,6 +113,7 @@ html, body {
     pointer-events: none;
 }
 
+/*set up hint text*/
 .hint_container {
     display: flex;
     position: absolute;

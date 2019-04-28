@@ -1,3 +1,4 @@
+/*set up the background video*/
 #bgVideo {
     position: fixed;
     right: 0;
@@ -7,6 +8,7 @@
     z-index: -1;
 }
 
+/*middle align the start button*/
 .startBtnContainer {
     display: flex;
     justify-content: center;
@@ -24,9 +26,9 @@
     font-size: 25px;
     margin: 0 auto;
     padding: 12px 27px;
-    mix-blend-mode: screen;
 }
 
+/*glowing effect on button when hover*/
 .startBtn:hover {
     background-color: #d57400;
     box-shadow: 0 0px 35px orange;

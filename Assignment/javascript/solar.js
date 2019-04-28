@@ -1,8 +1,10 @@
 function onHoverChangeiframe(planetName) {
     var iframe = document.querySelector("#iframe_planet");
+
+    // update the iframe content
     iframe.src = "iframe_intro/" + planetName + "_intro.html";
-    // var topbar = iframe.contentDocument.getElementsByClassName("topbar");
-    // topbar.item(0).style.display = "none";
+
+    // change the iframe position
     switch (planetName) {
         case "sun":
             iframe.style.left = "25%";

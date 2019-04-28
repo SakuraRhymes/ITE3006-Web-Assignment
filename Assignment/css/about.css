@@ -1,3 +1,4 @@
+/*general setting*/
 body {
     background-color: #000;
     color: white;
@@ -5,6 +6,7 @@ body {
     font-size: 17px;
 }
 
+/*set the background position*/
 .bg {
     z-index: -99;
     position: absolute;
@@ -17,11 +19,13 @@ body {
     width: 100%;
 }
 
+/*set the info container position*/
 .container {
     position: relative;
     top: 15vh;
 }
 
+/*middle align the container*/
 .container div {
     width: 50%;
     margin: 20px auto;
@@ -68,6 +72,7 @@ h1 {
     cursor: pointer;
 }
 
+/*glowing effect on button when hover*/
 .submit_button:hover {
     box-shadow: 0 0px 35px orange;
 }

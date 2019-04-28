@@ -1,3 +1,4 @@
+/*general setting*/
 .topbar {
     background-color: #333;
     filter: opacity(85%);
@@ -18,6 +19,7 @@
     text-decoration: none;
 }
 
+/*highlight current page*/
 .topbar .active {
     background-color: #ff9933;
     color: white;
@@ -28,21 +30,25 @@
     overflow: hidden;
 }
 
+/*hide the toggle menu button on large screen by default*/
 .toggle_button {
     display: none;
 }
 
+/*set up the dropdown menu*/
 .dropdown_container .drop_button {
     border: none;
     outline: none;
     padding: 14px 23px;
 }
 
+/*highlight the current item on hover*/
 .topbar a:hover, .dropdown_container:hover .drop_button {
     background-color: #ddd;
     color: black;
 }
 
+/*set up and hide the dropdown menu by default*/
 .dropdown_content {
     display: none;
     position: absolute;
@@ -64,15 +70,20 @@
     background-color: #ddd;
 }
 
+/*display the dropdown menu on hover*/
 .dropdown_container:hover .dropdown_content {
     display: block;
 }
 
+/*responsive setting*/
 @media screen and (max-width: 600px) {
+
+    /*hide everything except the home button*/
     .topbar a:not(:first-child), .dropdown_container .drop_button {
         display: none;
     }
 
+    /*display the toggle submenu button*/
     .topbar a.toggle_button {
         float: right;
         display: block;
@@ -82,6 +93,7 @@
         padding: 12px 40px;
     }
 
+    /*set up the top bar on small screen*/
     .topbar.responsive {
         position: relative;
     }

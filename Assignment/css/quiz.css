@@ -1,3 +1,4 @@
+/*general setting*/
 body {
     background-color: black;
     background-image: url(../assets/picture/quiz/universe-background.jpg);
@@ -10,6 +11,7 @@ body {
     font-family: sans-serif;
 }
 
+/*set up the header*/
 .quiz_intro {
     color: rgb(255, 169, 21);
     text-align: center;
@@ -18,6 +20,7 @@ body {
     padding: 100px 0px 25px;
 }
 
+/*set up the quiz form*/
 .quiz {
     color: white;
     line-height: 1;
@@ -53,6 +56,7 @@ legend {
     margin: 0px 15px;
 }
 
+/*highlight the selected answer*/
 input:checked + label {
     color: orange;
 }
@@ -63,10 +67,12 @@ input:checked + label {
     font-size: 15px;
 }
 
+/*set up the Q6 slider*/
 .Q6_range_container {
     width: 350px;
 }
 
+/*set up the slider bar*/
 .Q6_range_input {
     -webkit-appearance: none;
     width: 100%;
@@ -76,6 +82,7 @@ input:checked + label {
     outline: none;
 }
 
+/*set up the slider handle*/
 .Q6_range_input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -109,6 +116,7 @@ input:checked + label {
     cursor: pointer;
 }
 
+/*glowing effect on button when hover*/
 .Q8_add_button:hover {
     box-shadow: 0px 0px 10px 3px orange;
 }
@@ -122,10 +130,12 @@ input:checked + label {
     padding-bottom: 15px;
 }
 
+/*hide the check box for Q9, using image instead*/
 .Q9_container input[type=checkbox] {
     display: none;
 }
 
+/*highlight selected answer*/
 .Q9_container input[type=checkbox]:checked + label {
     border: 2px orange solid;
     box-shadow: 0px 0px 10px 3px orange;
@@ -137,6 +147,7 @@ input:checked + label {
     background-repeat: no-repeat;
 }
 
+/*set up answer image*/
 #Q9a + label {
     background-image: url(../assets/picture/quiz/earth_A.jpg);
     background-size: 30vw 40vh;
@@ -165,6 +176,7 @@ input:checked + label {
     height: 40vh;
 }
 
+/*set up submit button*/
 .check_button_container {
     display: flex;
     justify-content: center;
@@ -182,10 +194,12 @@ input:checked + label {
     cursor: pointer;
 }
 
+/*glowing effect on button when hover*/
 .check_answer_button:hover {
     box-shadow: 0px 0px 35px orange;
 }
 
+/*set up result display*/
 .result {
     display: none;
     position: relative;
@@ -193,6 +207,7 @@ input:checked + label {
     left: 5%;
 }
 
+/*set up retry button*/
 .retry_button {
     position: absolute;
     top: 27%;
@@ -207,6 +222,7 @@ input:checked + label {
     cursor: pointer;
 }
 
+/*glowing effect on button when hover*/
 .retry_button:hover {
     box-shadow: 0 0px 25px orange;
 }

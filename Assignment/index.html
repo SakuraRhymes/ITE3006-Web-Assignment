@@ -12,9 +12,11 @@
 
 <body>
 
+<!--top navigation bar-->
 <div class="topbar">
     <a href="index.html" class="active">Home</a>
     <a href="solar.html">Solar System</a>
+    <!--dropdown part of the top bar-->
     <div class="dropdown_container">
         <a href="" class="drop_button">Planets</a>
         <div class="dropdown_content">
@@ -31,14 +33,16 @@
     </div>
     <a href="quiz.html">Mini Quiz</a>
     <a href="about.html">About</a>
+    <!--button to toggle the top bar in small screen-->
     <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
-
 </div>
 
+<!--start button at the bottom of the screen that take the user to solar.html-->
 <div class="startBtnContainer">
     <a href="solar.html" class="startBtn">Start Explore</a>
 </div>
 
+<!--background intro video-->
 <video autoplay muted id="bgVideo">
     <source src="assets/video/Intro.mp4" type="video/mp4">
 </video>

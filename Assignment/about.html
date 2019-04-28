@@ -10,9 +10,11 @@
 </head>
 <body>
 
+<!--top navigation bar-->
 <div class="topbar">
     <a href="index.html">Home</a>
     <a href="solar.html">Solar System</a>
+    <!--dropdown part of the top bar-->
     <div class="dropdown_container">
         <a href="" class="drop_button">Planets</a>
         <div class="dropdown_content">
@@ -28,7 +30,8 @@
         </div>
     </div>
     <a href="quiz.html">Mini Quiz</a>
-    <a class="active" href="about.html">About</a>
+    <a href="about.html" class="active">About</a>
+    <!--button to toggle the top bar in small screen-->
     <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
 </div>
 
@@ -36,6 +39,7 @@
     <img src="assets/picture/about-background.jpg" alt="">
 </div>
 
+<!--main info body-->
 <div class="container">
     <div class="info">
         <h1>About</h1>
@@ -54,6 +58,7 @@
         <a href="https://solarsystem.nasa.gov">NASA Science</a>
     </div>
 
+    <!--feedback form-->
     <div class="feedback">
         <h1>Feedback</h1>
         We welcome any feedback regarding this solar system website. Please leave your comments or questions down below.
@@ -99,7 +104,7 @@
                 <textarea name="comment" id="comment" cols="50" rows="10" maxlength="300" placeholder="Please leave your comment here. (Maximum 300 words)" required></textarea>
             </div>
             <br>
-            <input type="submit" class="submit_button" value="Send Feedback" onsubmit="alert('Thank you for your feedback!'); return true;">
+            <input type="submit" class="submit_button" value="Send Feedback" onsubmit="alert('Thank you for your feedback!');">
         </form>
     </div>
 </div>

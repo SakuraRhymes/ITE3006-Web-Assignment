@@ -1,3 +1,4 @@
+/*general setting*/
 body {
     font-family: sans-serif;
     font-size: 18px;
@@ -8,13 +9,16 @@ body {
     background-attachment: fixed;
     background-size: 150%;
 }
+
 .planet_pic img {
     height: 500px
 }
+
 .container {
     position: absolute;
 }
 
+/*set up the header image*/
 .earth .planet_pic {
     background-image: url(../assets/picture/planets/earth/earth_banner.jpg);
 }
@@ -59,13 +63,16 @@ body {
     background-position: center;
     height: 350px;
 }
+
 .planets {
     position: relative;
 }
+
 .cutinColor1 {
     padding: 10px;
     background: rgba(0, 0, 0, 0.3);
 }
+
 .overviewContent {
     margin: 20px 105px 50px 105px;
     line-height: 26px;
@@ -75,6 +82,8 @@ body {
     padding: 10px;
     margin: 20px 80px;
 }
+
+/*display the didyouknow content when hover*/
 .didYouKnow {
     line-height: 26px;
     width: 170px;
@@ -97,6 +106,7 @@ h1 {
     font-family: sans-serif;
     font-weight: bold;
 }
+
 h3 {
     color: orange;
     padding: 20px 0px;
@@ -106,6 +116,7 @@ h3 {
     font-family: sans-serif;
 }
 
+/*middle align the dataof container*/
 .dataOfContainer {
     letter-spacing: 1px;
     line-height: 26px;
@@ -114,7 +125,9 @@ h3 {
     display: flex;
     justify-content: center;
 }
-.radius {
+
+/*set up the dataof circle*/
+.dateOfCircle {
     box-shadow: 0px 0px 10px 3px orange;
     display: inline-block;
     border-radius: 999px;
@@ -127,6 +140,8 @@ h3 {
     text-align: center;
     background-color: rgba(105, 105, 105, 0.3);;
 }
+
+/*position the dataof circle*/
 .dataOfContent {
     display: flex;
     flex-flow: row wrap;
@@ -135,15 +150,18 @@ h3 {
     width: 100%
 }
 
-.dataOfContent .radius div {
+.dataOfContent .dateOfCircle div {
     color: orange;
 }
+
+/*set up the gallery*/
 .galleryContainer {
     padding: 10px;
     margin: 10px 90px;
     display: block;
     justify-content: center;
 }
+
 .galleryContainer .galleryHeading {
     padding: 20px 0px;
     text-align: center;
@@ -152,6 +170,7 @@ h3 {
     font-family: sans-serif;
     font-weight: bold;
 }
+
 .gallery {
     padding: 10px 10px;
     max-width: 1280px;
@@ -160,12 +179,16 @@ h3 {
     background-color: rgba(52, 53, 53, 0.7);
     border-radius: 9px;
 }
+
 .photo {
     display: none;
 }
+
 .photo img {
     width: 100%
 }
+
+/*set up the gallery navigate button*/
 .prev,
 .next {
     color: rgba(255, 165, 0, 0.6);
@@ -176,6 +199,7 @@ h3 {
     font-size: 35px;
     user-select: none;
 }
+
 .next {
     margin: 0px 10px;
     right: 0px;
@@ -191,18 +215,25 @@ sup {
     vertical-align: super;
     font-size: smaller;
 }
+
+/*responsive setting*/
 @media only screen and (max-width: 750px) {
+
+    /*change the background to a vertical image*/
     body {
         background-size: 100%;
         background-image: url(../assets/picture/planets/galaxy_bg02.jpg);
     }
+
     .overviewContent {
         font-size: 15px;
     }
+
     .didYouKnowContent {
         font-size: 15px;
     }
 
+    /*enlarge the gallery*/
     .gallery {
         border: none;
         padding: 0px;
@@ -223,7 +254,3 @@ sup {
     }
 }
 
-/*
-*{
-    border: 1px red solid !important; 
-}*/

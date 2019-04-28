@@ -9,11 +9,13 @@
     <script src="javascript/quiz.js"></script>
     <script src="javascript/topbar.js"></script>
 </head>
-
 <body>
+
+<!--top navigation bar-->
 <div class="topbar">
     <a href="index.html">Home</a>
     <a href="solar.html">Solar System</a>
+    <!--dropdown part of the top bar-->
     <div class="dropdown_container">
         <a href="" class="drop_button">Planets</a>
         <div class="dropdown_content">
@@ -30,17 +32,20 @@
     </div>
     <a href="quiz.html" class="active">Mini Quiz</a>
     <a href="about.html">About</a>
+    <!--button to toggle the top bar in small screen-->
     <a href="javascript:void(0);" class="toggle_button" onclick="toggleTopbar()">&#9776;</a>
 </div>
 
 </div>
 
+<!--quiz header-->
 <h1 class="quiz_intro">
     How Much Do You Know About Our Solar System?
 </h1>
 
 <div class="quiz">
     <form action="" method="post" enctype="multipart/form-data">
+        <!--result of the quiz, only visible when user completed the quiz-->
         <fieldset class="result">
             <legend>Mini Quiz Result</legend>
 
@@ -53,6 +58,7 @@
 
         <br>
 
+        <!--main question part 1-->
         <fieldset>
             <legend>Part 1 : Solar System</legend>
 
@@ -94,6 +100,7 @@
 
         <br>
 
+        <!--main question part 2-->
         <fieldset>
             <legend>Part 2 : Sun</legend>
 
@@ -124,6 +131,7 @@
 
         <br>
 
+        <!--main question part 3-->
         <fieldset>
             <legend>Part 3 : Earth</legend>
 
@@ -164,6 +172,8 @@
             </div>
 
         </fieldset>
+
+        <!--on submit, call the javascript to check the answer and display the result-->
         <div class="check_button_container">
             <input type="submit" class="check_answer_button" value="Check Your Answer" onclick="checkAnswer()">
         </div>
